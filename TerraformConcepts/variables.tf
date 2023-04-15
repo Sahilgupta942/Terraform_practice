@@ -1,8 +1,8 @@
 variable "AWS_ACCESS_KEY" {
-    default = "${var.TEMP_ACCESS_KEY}"
+    default = secretVar.TEMP_ACCESS_KEY
 }
 variable "AWS_SECRET_KEY" {
-    default = "${var.TEMP_SECRET_KEY}"
+    default = secretVar.TEMP_SECRET_KEY
 }
 variable "AWS_REGION" {
     default = "us-east-1"
